@@ -5,53 +5,28 @@ Personal documentation of Cybersecurity and Infrastructure Security Agency (CISA
 
 ---
 
-## Vulnerability Exploitation
+**Vulnerability Exploitation**
+* **Papercut PrintMeShells** (CVE-2023-27350) — [View Writeup](./vulnerabilities/CVE-2023-27350.md)
+* **Cacti Anonymous Polling** (CVE-2022-46169) — [View Writeup](./vulnerabilities/CVE-2022-46169.md)
+* **ForgeRock OpenAM Backstage Pass** (CVE-2021-35464) — [View Writeup](./vulnerabilities/CVE-2021-35464.md)
+* **Baron Samedit** (CVE-2021-3156) — [View Writeup](./vulnerabilities/CVE-2021-3156.md)
 
-| Vulnerability | CVE Identifier | |
-| :--- | :--- | :--- |
-| Papercut PrintMeShells | **CVE-2023-27350** | [View Writeup](./vulnerabilities/CVE-2023-27350.md) |
-| Cacti Anonymous Polling | **CVE-2022-46169** | [View Writeup](./vulnerabilities/CVE-2022-46169.md) |
-| ForgeRock OpenAM Backstage Pass | **CVE-2021-35464** | [View Writeup](./vulnerabilities/CVE-2021-35464.md) |
-| Baron Samedit | **CVE-2021-3156** | [View Writeup](./vulnerabilities/CVE-2021-3156.md) |
+**OT / ICS Security**
+* **Exposed Public HMI** (Internet exposure & access controls) — [View Writeup](./ot-ics/exposed-hmi.md)
+* **Exposed CCTV Cameras** (Public feed hardening) — [View Writeup](./ot-ics/exposed-cctv.md)
+* **VPN Credential Stuffing** (Pivoting into HMI controls) — [View Writeup](./ot-ics/vpn-credential-stuffing.md)
+* **Historian Data Backups** (Exposed endpoints & failed jobs) — [View Writeup](./ot-ics/historian-backups.md)
 
----
-
-## OT / ICS Security
-
-| Scenario & Misconfiguration | |
-| :--- | :--- |
-| **Exposed HMI**<br>Public internet exposure and access control | [View Writeup](./ot-ics/exposed-hmi.md) |
-| **Exposed CCTV Camera**<br>Publicly reachable video feed hardening | [View Writeup](./ot-ics/exposed-cctv.md) |
-| **VPN Credential Stuffing**<br>Credential stuffing into HMI controls | [View Writeup](./ot-ics/vpn-credential-stuffing.md) |
-| **Historian Data Backups**<br>Remediation of exposed and failing backup pipeline | [View Writeup](./ot-ics/historian-backups.md) |
+**Linux Administration & Helpdesk**
+* **Linux User & Service Management** (Users, groups & upgrades) — [View Writeup](./sysadmin/linux-user-service-management.md)
+* **Linux Hardening** (SSH access, membership & patching) — [View Writeup](./sysadmin/linux-ssh-hardening.md)
+* **Helpdesk Support** (Windows workstation troubleshooting) — [View Writeup](./sysadmin/windows-workstation-troubleshooting.md)
 
 ---
 
-## Linux Administration & Systems Support
-
-| Domain | Focus Area | |
-| :--- | :--- | :--- |
-| **Linux Administration** | User provisioning, group assignment, service upgrade | [View Writeup](./sysadmin/linux-user-service-management.md) |
-| **Linux Hardening** | SSH configuration, access control, live service patching | [View Writeup](./sysadmin/linux-ssh-hardening.md) |
-| **Helpdesk Support** | Diagnosing and resolving Windows workstation issues | [View Writeup](./sysadmin/windows-workstation-troubleshooting.md) |
-
----
-
-## Directory Structure
-
+**Directory Structure**
 ```text
 ├── README.md
-├── vulnerabilities/
-│   ├── CVE-2021-3156.md
-│   ├── CVE-2021-35464.md
-│   ├── CVE-2022-46169.md
-│   └── CVE-2023-27350.md
-├── ot-ics/
-│   ├── exposed-cctv.md
-│   ├── exposed-hmi.md
-│   ├── historian-backups.md
-│   └── vpn-credential-stuffing.md
-└── sysadmin/
-    ├── linux-ssh-hardening.md
-    ├── linux-user-service-management.md
-    └── windows-workstation-troubleshooting.md
+├── vulnerabilities/ (CVE-2021-3156.md, CVE-2021-35464.md, CVE-2022-46169.md, CVE-2023-27350.md)
+├── ot-ics/          (exposed-cctv.md, exposed-hmi.md, historian-backups.md, vpn-credential-stuffing.md)
+└── sysadmin/        (linux-ssh-hardening.md, linux-user-service-management.md, windows-workstation-troubleshooting.md)
